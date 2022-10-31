@@ -1,0 +1,118 @@
+.dashBoard {
+  margin: 0 12%;
+  width: 100%;
+}
+
+.dashBoardContainer {
+  width: 100%;
+}
+
+.socialMediaMobile,
+.mobileHeader,
+.addButton {
+  display: none;
+}
+
+@media screen and (max-width: 582px) {
+  .dashBoard {
+    margin: 0;
+  }
+
+  .mainBodyCount {
+    z-index: 0;
+  }
+
+  .topBar {
+    display: none;
+  }
+
+  .mobileTopBar {
+    z-index: 1;
+    display: flex;
+    position: fixed;
+    padding: 0 18px;
+    top: 0;
+    left: 0;
+    /* z-index: 2; */
+    right: 0;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    background-color: var(--color1);
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.12), 0 4px 4px 0 rgba(0, 0, 0, 0.24);
+  }
+
+  .sideBar {
+    display: none;
+  }
+
+  .mainBody {
+    position: absolute;
+    top: 3rem;
+    /* left: 8rem; */
+    /* min-height: 100vh; */
+  }
+
+  .headerSearch {
+    display: none;
+  }
+
+  .headerAddButton {
+    position: fixed;
+    bottom: 31px;
+    right: 33px;
+    z-index: 1;
+  }
+
+  .mobileTopBarFirst {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .mobileTopBarLast {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .profileContents {
+    top: 79px;
+    right: 0px;
+  }
+
+  .mainBody {
+    width: 5em;
+    height: 79px;
+    /* margin-top: 60px; */
+    width: 100%;
+    z-index: 0;
+  }
+
+  .overlay {
+    background: none;
+  }
+
+  .modal-content {
+    background-color: var(--color2);
+    left: 0;
+    right: 0;
+    top: 0;
+    border-radius: 0;
+    position: fixed;
+    bottom: 0;
+    z-index: -6;
+    margin: 83px 0 0 0;
+  }
+
+  .close {
+    border: none;
+    background: none;
+    outline: none;
+    position: absolute;
+    top: -332px;
+    right: -726px;
+    cursor: pointer;
+    z-index: 1;
+  }
+}

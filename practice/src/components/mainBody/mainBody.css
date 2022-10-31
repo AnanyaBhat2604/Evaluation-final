@@ -1,0 +1,287 @@
+.mainBody {
+  position: absolute;
+  top: 5rem;
+  /* left: 8rem; */
+  /* min-height: 100vh; */
+}
+
+.mainBodyContainer {
+  width: 45rem;
+  margin-left: 8rem;
+  padding: 1em 0 0 3em;
+  /* display: flex; */
+  /* flex-direction: column; */
+}
+
+.mainBodyHeader {
+  display: flex;
+  justify-content: space-between;
+}
+
+.headerTitle {
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: 41px;
+  border-bottom: 3px solid var(--active);
+  border-radius: 2px;
+  color: var(--color6);
+  width: 32px;
+  padding-top: 20px;
+}
+
+.headerOptions {
+  display: flex;
+  gap: 38px;
+  position: fixed;
+  right: 12%;
+}
+
+.headerSearch {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.headerSearchMobile {
+  display: none;
+}
+
+.searchBarIcon {
+  position: absolute;
+  right: 0;
+}
+
+.searchBar {
+  outline: none;
+  border-bottom: 1px solid var(--color1);
+  border-width: 0 0 1px 0;
+  background: none;
+  padding: 10px;
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: 24px;
+}
+
+.headerAddButton {
+  cursor: pointer;
+}
+
+.mainBodyCount {
+  padding-top: 32px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  width: 17em;
+}
+
+.socialMedia {
+  color: var(--color6);
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: 33px;
+}
+
+.socialMediaCount {
+  height: 37px;
+  width: 37px;
+  border: 1px solid var(--color2);
+  background-color: var(--color1);
+  color: var(--color2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.mainBodyEmpty {
+  border-radius: 500px;
+  background-color: var(--topBar);
+  width: 819px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 300px;
+  left: 230px;
+}
+
+.mainBodyEmpty div {
+  color: var(--color6);
+  font-size: 26px;
+  letter-spacing: 0;
+  line-height: 36px;
+  text-align: center;
+  padding: 3em 0;
+  max-width: 400px;
+}
+
+.closeButton {
+  position: absolute;
+  top: 351px;
+  right: 761px;
+}
+
+.close {
+  border: none;
+  background: none;
+  outline: none;
+  position: absolute;
+  top: -377px;
+  right: -792px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.cardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  align-items: center;
+  gap: 23px;
+  margin-top: 3rem;
+}
+
+.mainBodyContents {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 23px;
+  width: 61vw;
+}
+
+.cardContents {
+  width: 350px;
+  background-color: var(--color2);
+  box-shadow: 0 7px 16px 9px rgb(0 0 0 / 10%);
+  border-radius: 1em;
+  padding: 12px 20px;
+  cursor: pointer;
+}
+
+.siteLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color6);
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 22px;
+  text-align: center;
+}
+
+.copyTitle {
+  color: var(--color1);
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: 27px;
+  padding-bottom: 6px;
+  text-align: right;
+}
+
+.cardCopy {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.cardHead {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 8px;
+}
+
+.cardRight {
+  display: flex;
+  flex-direction: column;
+}
+
+.copyPass {
+  color: var(--sideBar);
+  font-size: 12.6px;
+  letter-spacing: 0;
+  line-height: 17px;
+}
+
+@media screen and (max-width: 582px) {
+  .mainBodyCount {
+    display: none;
+  }
+
+  .mainBodyEmpty{
+    border-radius: 500px;
+    background-color: var(--topBar);
+    width: 349px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 87px;
+    left: 20px;
+  }
+
+  .mobileSocialMediaCount {
+    display: flex;
+    position: fixed;
+    top: 58px;
+    right: -4em;
+  }
+
+  .headerTitle {
+    position: fixed;
+    top: 68px;
+    left: 0.5em;
+  }
+
+  .headerSearch {
+    display: none;
+  }
+
+  .headerSearchMobile {
+    display: block;
+  }
+
+  .searchBar{
+    display: absolute;
+    position: fixed;
+    top: 129px;
+    left: 31px;
+  }
+  
+  .mainBodyContainer {
+    padding: 0 1.2em;
+  }
+
+  .socialMediaCount {
+    height: 30px;
+    width: 30px;
+  }
+
+  .mainBodyContents {
+    position: absolute;
+    left: 0;
+    top: 46px;
+    z-index: -15;
+    width: 100vw;
+  }
+
+  .cardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    align-items: center;
+    gap: 23px;
+    margin-top: 3rem;
+    z-index: -1;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .cardContents {
+    width: 270px;
+  }
+}
