@@ -263,7 +263,9 @@
     position: absolute;
     left: 0;
     top: 46px;
+    display: flex;
     z-index: -15;
+    justify-content: center;
     width: 100vw;
   }
 
